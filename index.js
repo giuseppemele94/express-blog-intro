@@ -1,4 +1,9 @@
+//creazione di un server che rimane in ascolto sulla porta 3000
+
+//importiamo express
 const express = require('express');
+//inizializziamo express invocandolo come funzione e salviamo 
+//il risultato in una variabile 
 const app = express();
 const port = 3000;
 
@@ -52,7 +57,7 @@ app.get('/bacheca', (req,res) => {
     res.json(posts); 
 })
 
-
+//avviamo il server mettendolo in ascolto sulla porta indicata 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 })
