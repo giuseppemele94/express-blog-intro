@@ -10,34 +10,34 @@ app.use(express.static('public'));
 //array dei post 
 const posts = [
     {
-        title: "",
-        content: "",
+        title: "Ciambellone",
+        content: "un classico della colazione italiana",
         image: "",
-        tags: ["", ""]
+        tags: ["dolci", "colazione"]
     },
      {
-        title: "",
-        content: "",
+        title: "Cracker alla barbabietola",
+        content: "ideali come snack o aperitivo",
         image: "",
-        tags: ["", ""]
+        tags: ["snack", "salato"]
     },
      {
-        title: "",
-        content: "",
+        title: "Pane fritto dolce",
+        content: "ideale per i più piccini",
         image: "",
-        tags: ["", ""]
+        tags: ["dolci", "bambini"]
     },
      {
-        title: "",
-        content: "",
+        title: "Pasta alla barbabietola",
+        content: "primo piatto alternativo",
         image: "",
-        tags: ["", ""]
+        tags: ["pasta", "barbabietola"]
     },
      {
-        title: "",
-        content: "",
+        title: "Torta paesana",
+        content: "dolce tipico della tradizione pugliese",
         image: "",
-        tags: ["", ""]
+        tags: ["dolce", "puglia"]
     },
 ]
 
