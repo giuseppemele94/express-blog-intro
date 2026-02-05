@@ -12,32 +12,32 @@ const posts = [
     {
         title: "Ciambellone",
         content: "un classico della colazione italiana",
-        image: "",
-        tags: ["dolci", "colazione"]
+        image: "images/blog/ciambellone.jpeg",
+        tags: ["dolci", "colazione"],
     },
      {
         title: "Cracker alla barbabietola",
         content: "ideali come snack o aperitivo",
         image: "",
-        tags: ["snack", "salato"]
+        tags: ["snack", "salato"],
     },
      {
         title: "Pane fritto dolce",
         content: "ideale per i più piccini",
         image: "",
-        tags: ["dolci", "bambini"]
+        tags: ["dolci", "bambini"],
     },
      {
         title: "Pasta alla barbabietola",
         content: "primo piatto alternativo",
         image: "",
-        tags: ["pasta", "barbabietola"]
+        tags: ["pasta", "barbabietola"],
     },
      {
         title: "Torta paesana",
         content: "dolce tipico della tradizione pugliese",
         image: "",
-        tags: ["dolce", "puglia"]
+        tags: ["dolce", "puglia"],
     },
 ]
 
@@ -45,6 +45,13 @@ const posts = [
 app.get('/', (req, res) => {
     res.send("<h1>Server del mio blog</h1>")
 })
+
+
+//rotta /bacheca che restituisce un obj json con la lista dei post
+app.get('/bacheca', (req,res) => {
+    res.json(posts); 
+})
+
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
