@@ -7,6 +7,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// cors (Cross-Origin Resource Sharing) serve per evitare il blocco
+// delle richieste HTTP quando frontend e backend sono su porte diverse
+const cors = require("cors");
+
+// applicoil middleware cors a tutte le rotte dell'applicazione
+// cosi da autorizzare le richieste provenienti da porte diverse 
+app.use(cors());
 
 // attivazione della cartella public per uso file statici
 app.use(express.static('public'));
@@ -61,3 +68,57 @@ app.get('/bacheca', (req,res) => {
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 })
+
+
+
+
+
+
+{/*Test chiamata API a indirizzo http://localhost:3000/bacheca
+per controllare che la richeista arrivi al mio server e che il mio server 
+rispondi correttamente , con prova di stampa dell'array di obj sia in console log 
+che come lista. 
+Aggiunta di cors che evita il bloccato delle chiamate quando server e client
+sono su due porte diverse.
+
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+function App() {
+  const [posts, setPosts] = useState([]); // DEVE essere un array
+  const endpoint = "http://localhost:3000/bacheca";
+
+  useEffect(() => {
+    axios
+      .get(endpoint)
+      .then((res) => {
+        console.log(res.data);        // { posts: [...] }
+        console.log(res.data.posts);  // <-- ARRAY
+        setPosts(res.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  return (
+    <div>
+      <h1>Blog</h1>
+
+      {posts.map((post, index) => (
+        <div key={index}>
+          <h2>{post.title}</h2>
+          <p>{post.content}</p>
+          <img
+            src={`http://localhost:3000/${post.image}`}
+            alt={post.title}
+            width="250"
+          />
+          <p>Tags: {post.tags.join(", ")}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default App; */}
