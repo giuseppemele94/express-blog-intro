@@ -18,25 +18,25 @@ const posts = [
      {
         title: "Cracker alla barbabietola",
         content: "ideali come snack o aperitivo",
-        image: "",
+        image: "images/blog/cracker_barbabietola.jpeg",
         tags: ["snack", "salato"],
     },
      {
         title: "Pane fritto dolce",
         content: "ideale per i più piccini",
-        image: "",
+        image: "images/blog/pane_fritto_dolce.jpeg",
         tags: ["dolci", "bambini"],
     },
      {
         title: "Pasta alla barbabietola",
         content: "primo piatto alternativo",
-        image: "",
+        image: "images/blog/pasta_barbabietola.jpeg",
         tags: ["pasta", "barbabietola"],
     },
      {
         title: "Torta paesana",
         content: "dolce tipico della tradizione pugliese",
-        image: "",
+        image: "images/blog/torta_paesana.jpeg",
         tags: ["dolce", "puglia"],
     },
 ]
