@@ -24,31 +24,31 @@ const posts = [
     {
         title: "Ciambellone",
         content: "un classico della colazione italiana",
-        image: "images/blog/ciambellone.jpeg",
+        image: "/images/blog/ciambellone.jpeg",
         tags: ["dolci", "colazione"],
     },
      {
         title: "Cracker alla barbabietola",
         content: "ideali come snack o aperitivo",
-        image: "images/blog/cracker_barbabietola.jpeg",
+        image: "/images/blog/cracker_barbabietola.jpeg",
         tags: ["snack", "salato"],
     },
      {
         title: "Pane fritto dolce",
         content: "ideale per i più piccini",
-        image: "images/blog/pane_fritto_dolce.jpeg",
+        image: "/images/blog/pane_fritto_dolce.jpeg",
         tags: ["dolci", "bambini"],
     },
      {
         title: "Pasta alla barbabietola",
         content: "primo piatto alternativo",
-        image: "images/blog/pasta_barbabietola.jpeg",
+        image: "/images/blog/pasta_barbabietola.jpeg",
         tags: ["pasta", "barbabietola"],
     },
      {
         title: "Torta paesana",
         content: "dolce tipico della tradizione pugliese",
-        image: "images/blog/torta_paesana.jpeg",
+        image: "/images/blog/torta_paesana.jpeg",
         tags: ["dolce", "puglia"],
     },
 ]
